@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  bot:
+    container_name: bot
+    build:
+      context: ./bot
+      dockerfile: dockerfile
+    volumes:
+      - ./bot:/bot
+    env_file:
+      - .env
