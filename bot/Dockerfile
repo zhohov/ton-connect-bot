@@ -10,4 +10,4 @@ RUN poetry install --no-root
 
 COPY . /bot/
 
-RUN poetry run python src/main.py
+CMD ["poetry", "run", "python", "src/main.py"]
